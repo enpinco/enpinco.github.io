@@ -6,7 +6,7 @@
   <link href="http://enpinco.github.io/atom.xml" rel="self"/>
   
   <link href="http://enpinco.github.io/"/>
-  <updated>2025-10-07T07:53:11.281Z</updated>
+  <updated>2025-10-07T10:34:38.963Z</updated>
   <id>http://enpinco.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的第一篇文章</title>
+    <link href="http://enpinco.github.io/2025/10/07/wo-de-di-yi-pian-wen-zhang/"/>
+    <id>http://enpinco.github.io/2025/10/07/wo-de-di-yi-pian-wen-zhang/</id>
+    <published>2025-10-07T10:31:36.000Z</published>
+    <updated>2025-10-07T10:34:38.963Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;关于罗萍老师，我在招生官网上看到的信息是“目前关注的主要科研方向包括SoC/CPU的电源管理电路、能量采集技术、高效能源管理技术和抗辐射IC设计技术。”我在学院官网上看到的信息是“目前主要研究方向为智能功率集成电路与系统设计、高效电源管理策略、模拟集成电路抗辐射加固技术、能</summary>
+        
+      
+    
+    
+    
+    <category term="Markdown" scheme="http://enpinco.github.io/categories/Markdown/"/>
+    
+    
+    <category term="Typora" scheme="http://enpinco.github.io/tags/Typora/"/>
+    
+    <category term="Markdown" scheme="http://enpinco.github.io/tags/Markdown/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
