@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Coenpin</title>
+  <title>侠影之谜</title>
   
   
   <link href="http://enpinco.github.io/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>http://enpinco.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>科恩平</name>
     
   </author>
   
