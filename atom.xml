@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Coenpin</title>
+  
+  
+  <link href="http://enpinco.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://enpinco.github.io/"/>
+  <updated>2025-10-07T07:53:11.281Z</updated>
+  <id>http://enpinco.github.io/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://enpinco.github.io/2025/10/07/hello-world/"/>
+    <id>http://enpinco.github.io/2025/10/07/hello-world/</id>
+    <published>2025-10-07T07:53:11.281Z</published>
+    <updated>2025-10-07T07:53:11.281Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
