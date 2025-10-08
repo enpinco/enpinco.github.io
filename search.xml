@@ -8,7 +8,7 @@
       <link href="/2025/10/08/wo-de-di-yi-pian-wen-zhang/"/>
       <url>/2025/10/08/wo-de-di-yi-pian-wen-zhang/</url>
       
-        <content type="html"><![CDATA[<h2 id="为什么要创建个人博客？">为什么要创建个人博客？</h2><p>“博客”这个词，我早在高中时期就听说过。那时第一次见到“blog”，联想到当时已经流行的“vlog”，便猜想它们形式类似。后来我才了解到，博客其实更偏向于文字记录与思想表达。</p><p>刚上大学时，身边不少技术大佬都有自己的博客，内容丰富、设计精美。然而当时的我，既没有总结与写作的习惯，也缺乏持续记录的动力。再加上搭建博客本身需要一定的技术基础，这个想法就一直被搁置了下来。</p><p>直到大三，事情开始有了变化。考研复习的过程中，我逐渐意识到系统记录与知识沉淀的重要性。我尝试过多种方式：起初是在飞书写日记，几乎每日坚持，直到期末和放寒假才中断；后来学校停用飞书，我又转向腾讯文档继续记录。然而现在回头看，这些零散的记录更多是日程规划，远未达到<strong>构建个人知识体系</strong>的层面。</p><p>上个月确定直博之后，我开始认真考虑搭建个人博客的可能性。在知乎上查阅了不少经验分享，了解到可以通过 GitHub Pages 与 Hexo 框架快速构建静态博客。特别感谢一份详尽的新手教程，它一步步引导我完成了从零到有的搭建过程（<a href="https://blog.csdn.net/victoryxa/article/details/103733655">这里附上文章链接</a>）。虽然中间遇到了一些小bug，但作为一名网络工程专业的大四学生，解决它们当然不在话下。最终，花了一天左右的时间，完成了基础的搭建与功能调试。</p><h2 id="我如何理解个人博客？">我如何理解个人博客？</h2><p>对我而言，个人博客首先是一种记录与表达的途径。当然，表达的平台有很多——CSDN、知乎、GitHub，都是很好的选择。但我更倾向于一个相对私密的空间，能够自由书写而不必过早面对外界的目光。不过，秉承开源与分享的精神，未来随着内容的成熟，我也许会逐步开放部分内容。</p><p>至于内容方向，过去一年我逐渐养成了写作的习惯。通过 <em><strong>过客</strong></em> 这个软件，我结识了几位笔友，甚至与其中一位保持着每周一封的通信频率——这几乎是高考之后，我第一次重新找回书写的乐趣。我们交流的话题非常广泛，这也让我希望未来的博客内容不局限于技术学习，也能涵盖人文思考，例如书评、影评，或是对社会事件的个人见解。</p><h2 id="关于更新频率">关于更新频率</h2><p>花费一整天搭建起来的网站，我相信谁都不会轻易放弃更新。</p><p>因此我暂时计划：工作日主要更新集成电路相关学习笔记，周末则写一些新闻评论或影评类内容。当然，这里不会变成日记本——每日计划仍会在私下进行。</p><h2 id="侠影之谜">侠影之谜</h2><p>最后，我为这个博客取名“侠影之谜”。这个名字源自诺兰执导的《蝙蝠侠》第一部副标题，既带有一些对“侠”的向往，也寄寓着对未知旅程的敬畏。希望在读博前的这一年，我能够在这里打下扎实的基础，记录成长的轨迹。</p><p><img src="/images/insert/insert1" alt="​​“It's not who you are underneath, it's what you do that defines you.”​"></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="为什么要创建个人博客？">为什么要创建个人博客？</h2><p>“博客”这个词，我早在高中时期就听说过。那时第一次见到“blog”，联想到当时已经流行的“vlog”，便猜想它们形式类似。后来我才了解到，博客其实更偏向于文字记录与思想表达。</p><p>刚上大学时，身边不少技术大佬都有自己的博客，内容丰富、设计精美。然而当时的我，既没有总结与写作的习惯，也缺乏持续记录的动力。再加上搭建博客本身需要一定的技术基础，这个想法就一直被搁置了下来。</p><p>直到大三，事情开始有了变化。考研复习的过程中，我逐渐意识到系统记录与知识沉淀的重要性。我尝试过多种方式：起初是在飞书写日记，几乎每日坚持，直到期末和放寒假才中断；后来学校停用飞书，我又转向腾讯文档继续记录。然而现在回头看，这些零散的记录更多是日程规划，远未达到<strong>构建个人知识体系</strong>的层面。</p><p>上个月确定直博之后，我开始认真考虑搭建个人博客的可能性。在知乎上查阅了不少经验分享，了解到可以通过 GitHub Pages 与 Hexo 框架快速构建静态博客。特别感谢一份详尽的新手教程，它一步步引导我完成了从零到有的搭建过程（<a href="https://blog.csdn.net/victoryxa/article/details/103733655">这里附上文章链接</a>）。虽然中间遇到了一些小bug，但作为一名网络工程专业的大四学生，解决它们当然不在话下。最终，花了一天左右的时间，完成了基础的搭建与功能调试。</p><h2 id="我如何理解个人博客？">我如何理解个人博客？</h2><p>对我而言，个人博客首先是一种记录与表达的途径。当然，表达的平台有很多——CSDN、知乎、GitHub，都是很好的选择。但我更倾向于一个相对私密的空间，能够自由书写而不必过早面对外界的目光。不过，秉承开源与分享的精神，未来随着内容的成熟，我也许会逐步开放部分内容。</p><p>至于内容方向，过去一年我逐渐养成了写作的习惯。通过 <em><strong>过客</strong></em> 这个软件，我结识了几位笔友，甚至与其中一位保持着每周一封的通信频率——这几乎是高考之后，我第一次重新找回书写的乐趣。我们交流的话题非常广泛，这也让我希望未来的博客内容不局限于技术学习，也能涵盖人文思考，例如书评、影评，或是对社会事件的个人见解。</p><h2 id="关于更新频率">关于更新频率</h2><p>花费一整天搭建起来的网站，我相信谁都不会轻易放弃更新。</p><p>因此我暂时计划：工作日主要更新集成电路相关学习笔记，周末则写一些新闻评论或影评类内容。当然，这里不会变成日记本——每日计划仍会在私下进行。</p><h2 id="侠影之谜">侠影之谜</h2><p>最后，我为这个博客取名“侠影之谜”。这个名字源自诺兰执导的《蝙蝠侠》第一部副标题，既带有一些对“侠”的向往，也寄寓着对未知旅程的敬畏。希望在读博前的这一年，我能够在这里打下扎实的基础，记录成长的轨迹。</p><p><img src="/images/insert/insert1.webp" alt="​​“It's not who you are underneath, it's what you do that defines you.”​"></p>]]></content>
       
       
       <categories>
@@ -23,19 +23,6 @@
             <tag> 自问自答 </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2025/10/07/hello-world/"/>
-      <url>/2025/10/07/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start">Quick Start</h2><h3 id="Create-a-new-post">Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new "My New Post"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server">Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files">Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
       
     </entry>
     
