@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="读博前，知乎前辈们的忠告, 侠影之谜">
-    <meta name="description" content="在读博前，我将收集知乎上收藏的各位前辈们给出的建议，希望也能为后面更多的同路人一些帮助。此文长期更新。">
+    <meta name="keywords" content="模拟和数字电子电路基础, 侠影之谜">
+    <meta name="description" content="本文是对《模拟与数字电子电路基础》的系统整理，重点覆盖放大电路、反馈与振荡、运算放大器应用、逻辑电路及数模转换等核心内容。内容以“快速查漏补缺”为目标，力求简洁、结构化、可搜索，适合期末复习、自测巩固或项目开发时快速回顾相关原理。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>读博前，知乎前辈们的忠告 | 侠影之谜</title>
+    <title>模拟和数字电子电路基础 | 侠影之谜</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -440,12 +440,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">读博前，知乎前辈们的忠告</h1>
+                    <h1 class="description center-align post-title">模拟和数字电子电路基础</h1>
                 </div>
             </div>
         </div>
@@ -469,16 +469,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%A7%91%E7%A0%94%E5%85%A5%E9%97%A8/">
-                                <span class="chip bg-color">科研入门</span>
+                            <a href="/tags/%E6%A8%A1%E7%94%B5/">
+                                <span class="chip bg-color">模电</span>
                             </a>
                         
-                            <a href="/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/">
-                                <span class="chip bg-color">经验分享</span>
-                            </a>
-                        
-                            <a href="/tags/%E7%9F%A5%E4%B9%8E/">
-                                <span class="chip bg-color">知乎</span>
+                            <a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+                                <span class="chip bg-color">基础知识</span>
                             </a>
                         
                     </div>
@@ -489,8 +485,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%A7%91%E7%A0%94/" class="post-category">
-                                科研
+                            <a href="/categories/%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="post-category">
+                                知识总结
                             </a>
                         
                     </div>
@@ -528,144 +524,537 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一-如何选择一个正确的博士生导师">一. 如何选择一个正确的博士生导师</h2>
-<p>（<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/664199676">参考此文</a>）<br>
-在我得知直博的第二天就看到了这篇文章，给我选导师提供了大量帮助。对我个人而言，选博导，首先看老师的人品，这决定了你后来几年的生活状态和精神状态，其次再看文章提到的，老师的title，也就是你能接触到的资源。</p>
-<p>印象很深的是下面这段话，基本上确定了我读博的精神信条。</p>
+                <h2 id="前言">前言</h2>
+<ul>
+<li><strong>写作目的</strong>：复习整理 + 查漏补缺 + 快速检索。</li>
+<li><strong>使用方法</strong>：每章仅保留核心概念与关键公式，略去复杂推导；适合作为复习前的扫盲或复习后的总结。</li>
+<li><strong>参考教材</strong>：模拟和数字电子电路基础（清华大学出版社）<br>
+<a target="_blank" rel="noopener" href="https://zh.z-library.sk/dl/18183658/e45ce8">z-library下载地址</a></li>
+</ul>
+<p><img src="/images/covers/cover2.png" alt="教材封面"></p>
+<!-- - **学习建议**：  
+  - 从“抽象”到“应用”循序渐进；
+  - 在每一章后留出笔记区用于补充典型题目或仿真图；
+  - 可结合 LTspice / Multisim 实验理解动态过程。   -->
+<hr>
+<h3 id="第-1-章｜电路抽象与理想元件">第 1 章｜电路抽象与理想元件</h3>
+<ul>
+<li>从麦克斯韦方程到集总电路模型</li>
+<li>理想元件：电阻、电压源、电流源</li>
+<li>模型与信息处理：信号、系统、能量</li>
+<li>电路分析中的基本假设与边界</li>
+</ul>
+<hr>
+<h3 id="第-2-章｜基尔霍夫定律与受控源">第 2 章｜基尔霍夫定律与受控源</h3>
+<ul>
+<li>KVL（电压定律）与 KCL（电流定律）</li>
+<li>与麦克斯韦方程的关系</li>
+<li>节点与网孔分析</li>
+<li>受控源的类型与符号</li>
+<li>示例：简单电路求解</li>
+</ul>
+<hr>
+<h3 id="第-3-章｜网络分析的一般方法">第 3 章｜网络分析的一般方法</h3>
+<ul>
+<li>叠加原理与等效变换</li>
+<li>戴维宁与诺顿定理</li>
+<li>节点分析法与网孔分析法</li>
+<li>电路线性与非线性判断</li>
+<li>仿真思路：SPICE 与等效模型</li>
+</ul>
+<hr>
+<h3 id="第-4-章｜非线性电路分析">第 4 章｜非线性电路分析</h3>
+<ul>
+<li>非线性特性与分段线性化</li>
+<li>负载线分析法</li>
+<li>稳态与动态工作点</li>
+<li>典型器件：二极管与晶体管特性曲线</li>
+</ul>
+<hr>
+<h3 id="第-5-章｜数字抽象与逻辑系统">第 5 章｜数字抽象与逻辑系统</h3>
+<ul>
+<li>模拟到数字的抽象思想</li>
+<li>逻辑电平与信号表示</li>
+<li>数字系统的鲁棒性与容错概念</li>
+<li>数字与模拟混合系统简介</li>
+</ul>
+<hr>
+<h3 id="第-6-章｜开关与数字逻辑单元">第 6 章｜开关与数字逻辑单元</h3>
+<ul>
+<li>MOSFET 作为开关元件</li>
+<li>S 模型与 SR 模型</li>
+<li>逻辑门实现与噪声容限</li>
+<li>典型电路：反相器、与非门</li>
+</ul>
+<hr>
+<h3 id="第-7-章｜放大与-MOSFET-放大器">第 7 章｜放大与 MOSFET 放大器</h3>
+<ul>
+<li>放大概念与增益定义</li>
+<li>MOSFET 的 SCS（开关电流源）模型</li>
+<li>单管放大电路的构建与分析</li>
+<li>线性区与饱和区对比</li>
+</ul>
+<hr>
+<h3 id="第-8-章｜小信号放大器">第 8 章｜小信号放大器</h3>
+<ul>
+<li>小信号建模方法</li>
+<li>电压增益、输入输出阻抗</li>
+<li>多级放大与耦合</li>
+<li>差分放大器概念</li>
+</ul>
+<hr>
+<h3 id="第-9-章｜储能元件：电容与电感">第 9 章｜储能元件：电容与电感</h3>
+<ul>
+<li>电容、电感的基本关系式</li>
+<li>能量存储与释放</li>
+<li>高频设计中的寄生效应</li>
+<li>RC 与 RL 电路的典型波形</li>
+</ul>
+<hr>
+<h3 id="第-10-章｜一阶暂态分析">第 10 章｜一阶暂态分析</h3>
+<ul>
+<li>一阶微分方程与时间常数</li>
+<li>RC 充放电过程</li>
+<li>一阶系统的阶跃响应</li>
+<li>数字存储电路中的暂态过程</li>
+</ul>
+<hr>
+<h3 id="第-11-章｜数字系统的能量与功率">第 11 章｜数字系统的能量与功率</h3>
+<ul>
+<li>CMOS 逻辑与功耗来源</li>
+<li>动态功耗与静态功耗</li>
+<li>能量效率与低功耗设计思想</li>
+</ul>
+<hr>
+<h3 id="第-12-章｜二阶暂态与谐振">第 12 章｜二阶暂态与谐振</h3>
+<ul>
+<li>二阶 RLC 电路特征方程</li>
+<li>阻尼与谐振类型</li>
+<li>欠阻尼、过阻尼、临界阻尼</li>
+<li>谐振在滤波与调谐中的意义</li>
+</ul>
+<hr>
+<h3 id="第-13-章｜正弦稳态分析与频率响应">第 13 章｜正弦稳态分析与频率响应</h3>
+<ul>
+<li>相量与复阻抗</li>
+<li>幅频与相频特性</li>
+<li>滤波器设计入门（RC 低通 / 高通）</li>
+</ul>
+<hr>
+<h3 id="第-14-章｜频率响应与谐振电路">第 14 章｜频率响应与谐振电路</h3>
+<ul>
+<li>串联与并联谐振比较</li>
+<li>品质因数 Q 与带宽</li>
+<li>典型应用：选频电路与振荡条件</li>
+</ul>
+<hr>
+<h3 id="第-15-章｜运算放大器与应用">第 15 章｜运算放大器与应用</h3>
+<ul>
+<li>理想运放模型与虚短/虚断规则</li>
+<li>基本电路：反相、同相、加法、积分、微分</li>
+<li>运放的非理想因素</li>
+<li>信号调理与滤波应用</li>
+</ul>
+<hr>
+<h3 id="第-16-章｜二极管与简单电路">第 16 章｜二极管与简单电路</h3>
+<ul>
+<li>PN 结原理与伏安特性</li>
+<li>小信号模型与等效电路</li>
+<li>应用：整流、稳压、限幅电路</li>
+</ul>
+<hr>
+<h2 id="附录A：常用公式与符号速查表">附录A：常用公式与符号速查表</h2>
+<p>本附录汇总了课程中最常使用的符号、常数与公式，便于复习与查漏。<br>
+如无特别说明，所有电量均为<strong>瞬时值</strong>（time-domain quantities）。</p>
+<hr>
+<h3 id="A-1-常用物理常数">A.1 常用物理常数</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">符号</th>
+<th style="text-align:left">含义</th>
+<th style="text-align:left">数值（近似）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$ e $</td>
+<td style="text-align:left">元电荷</td>
+<td style="text-align:left">$ 1.602 \times 10^{-19} , \text{C} $</td>
+</tr>
+<tr>
+<td style="text-align:center">$ k $</td>
+<td style="text-align:left">玻尔兹曼常数</td>
+<td style="text-align:left">$ 1.38 \times 10^{-23} , \text{J/K} $</td>
+</tr>
+<tr>
+<td style="text-align:center">$ q $</td>
+<td style="text-align:left">单位电荷量（同 $ e $）</td>
+<td style="text-align:left">$ 1.602 \times 10^{-19} , \text{C} $</td>
+</tr>
+<tr>
+<td style="text-align:center">$ \varepsilon_0 $</td>
+<td style="text-align:left">真空介电常数</td>
+<td style="text-align:left">$ 8.85 \times 10^{-12} , \text{F/m} $</td>
+</tr>
+<tr>
+<td style="text-align:center">$ \mu_0 $</td>
+<td style="text-align:left">真空磁导率</td>
+<td style="text-align:left">$ 4\pi \times 10^{-7} , \text{H/m} $</td>
+</tr>
+<tr>
+<td style="text-align:center">$ c $</td>
+<td style="text-align:left">光速</td>
+<td style="text-align:left">$ 3.00 \times 10^8 , \text{m/s} $</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="A-2-常用符号约定">A.2 常用符号约定</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">符号</th>
+<th style="text-align:left">含义</th>
+<th style="text-align:center">单位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">$ v(t) $</td>
+<td style="text-align:left">电压（随时间变化）</td>
+<td style="text-align:center">V</td>
+</tr>
+<tr>
+<td style="text-align:center">$ i(t) $</td>
+<td style="text-align:left">电流（随时间变化）</td>
+<td style="text-align:center">A</td>
+</tr>
+<tr>
+<td style="text-align:center">$ V, I $</td>
+<td style="text-align:left">电压、电流的有效值（RMS）</td>
+<td style="text-align:center">V, A</td>
+</tr>
+<tr>
+<td style="text-align:center">$ R $</td>
+<td style="text-align:left">电阻</td>
+<td style="text-align:center">Ω</td>
+</tr>
+<tr>
+<td style="text-align:center">$ C $</td>
+<td style="text-align:left">电容</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">$ L $</td>
+<td style="text-align:left">电感</td>
+<td style="text-align:center">H</td>
+</tr>
+<tr>
+<td style="text-align:center">$ P $</td>
+<td style="text-align:left">功率</td>
+<td style="text-align:center">W</td>
+</tr>
+<tr>
+<td style="text-align:center">$ E $</td>
+<td style="text-align:left">能量</td>
+<td style="text-align:center">J</td>
+</tr>
+<tr>
+<td style="text-align:center">$ f $</td>
+<td style="text-align:left">频率</td>
+<td style="text-align:center">Hz</td>
+</tr>
+<tr>
+<td style="text-align:center">$ \omega $</td>
+<td style="text-align:left">角频率，$ \omega = 2\pi f $</td>
+<td style="text-align:center">rad/s</td>
+</tr>
+<tr>
+<td style="text-align:center">$ j $</td>
+<td style="text-align:left">虚数单位，$ j^2 = -1 $</td>
+<td style="text-align:center">—</td>
+</tr>
+<tr>
+<td style="text-align:center">$ Z $</td>
+<td style="text-align:left">阻抗</td>
+<td style="text-align:center">Ω</td>
+</tr>
+<tr>
+<td style="text-align:center">$ Y $</td>
+<td style="text-align:left">导纳</td>
+<td style="text-align:center">S</td>
+</tr>
+<tr>
+<td style="text-align:center">$ \tau $</td>
+<td style="text-align:left">时间常数</td>
+<td style="text-align:center">s</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="A-3-基本电路定律">A.3 基本电路定律</h3>
+<h4 id="1-欧姆定律">(1) 欧姆定律</h4>
+<p>$$<br>
+v = iR<br>
+$$</p>
+<h4 id="2-基尔霍夫定律">(2) 基尔霍夫定律</h4>
+<ul>
+<li><strong>KCL（电流定律）</strong>：流入节点的电流代数和为零<br>
+$$<br>
+\sum i_{\text{in}} = \sum i_{\text{out}}<br>
+$$</li>
+<li><strong>KVL（电压定律）</strong>：任一闭合回路的电压代数和为零<br>
+$$<br>
+\sum v = 0<br>
+$$</li>
+</ul>
+<hr>
+<h3 id="A-4-功率与能量关系">A.4 功率与能量关系</h3>
+<ul>
+<li>
+<p>瞬时功率：<br>
+$$<br>
+p(t) = v(t) \cdot i(t)<br>
+$$</p>
+</li>
+<li>
+<p>平均功率（周期信号）：<br>
+$$<br>
+P_{\text{avg}} = \frac{1}{T}\int_0^T v(t)i(t) , dt<br>
+$$</p>
+</li>
+<li>
+<p>交流有效值：<br>
+$$<br>
+V_{\text{rms}} = \sqrt{\frac{1}{T}\int_0^T [v(t)]^2 , dt}<br>
+$$<br>
+$$<br>
+I_{\text{rms}} = \sqrt{\frac{1}{T}\int_0^T [i(t)]^2 , dt}<br>
+$$</p>
+</li>
+<li>
+<p>复功率与功率因数：<br>
+$$<br>
+S = VI^* = P + jQ<br>
+$$<br>
+$$<br>
+\text{功率因数 } \cos\phi = \frac{P}{|S|}<br>
+$$</p>
+</li>
+</ul>
+<hr>
+<h3 id="A-5-常见元件的伏安关系">A.5 常见元件的伏安关系</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">元件</th>
+<th style="text-align:left">关系式</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">电阻</td>
+<td style="text-align:left">$ v = iR $</td>
+<td style="text-align:left">线性关系</td>
+</tr>
+<tr>
+<td style="text-align:left">电容</td>
+<td style="text-align:left">$ i = C\frac{dv}{dt} $</td>
+<td style="text-align:left">电流超前电压90°</td>
+</tr>
+<tr>
+<td style="text-align:left">电感</td>
+<td style="text-align:left">$ v = L\frac{di}{dt} $</td>
+<td style="text-align:left">电压超前电流90°</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="A-6-阻抗与导纳（正弦稳态）">A.6 阻抗与导纳（正弦稳态）</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">元件</th>
+<th style="text-align:center">阻抗 $ Z $</th>
+<th style="text-align:center">导纳 $ Y = 1/Z $</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">电阻 $ R $</td>
+<td style="text-align:center">$ R $</td>
+<td style="text-align:center">$ 1/R $</td>
+</tr>
+<tr>
+<td style="text-align:left">电感 $ L $</td>
+<td style="text-align:center">$ j\omega L $</td>
+<td style="text-align:center">$ 1/(j\omega L) $</td>
+</tr>
+<tr>
+<td style="text-align:left">电容 $ C $</td>
+<td style="text-align:center">$ 1/(j\omega C) $</td>
+<td style="text-align:center">$ j\omega C $</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="A-7-一阶电路时间响应">A.7 一阶电路时间响应</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:center">响应形式</th>
+<th style="text-align:center">时间常数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">RC 充放电</td>
+<td style="text-align:center">$ v(t) = V_f + (V_i - V_f)e^{-t/RC} $</td>
+<td style="text-align:center">$ \tau = RC $</td>
+</tr>
+<tr>
+<td style="text-align:left">RL 充放电</td>
+<td style="text-align:center">$ i(t) = I_f + (I_i - I_f)e^{-tR/L} $</td>
+<td style="text-align:center">$ \tau = L/R $</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="A-8-二阶电路与谐振">A.8 二阶电路与谐振</h3>
+<p>$$<br>
+\omega_0 = \frac{1}{\sqrt{LC}}, \quad \zeta = \frac{R}{2}\sqrt{\frac{C}{L}}<br>
+$$</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">情况</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$ \zeta &lt; 1 $</td>
+<td style="text-align:left">欠阻尼，振荡衰减</td>
+</tr>
+<tr>
+<td style="text-align:left">$ \zeta = 1 $</td>
+<td style="text-align:left">临界阻尼</td>
+</tr>
+<tr>
+<td style="text-align:left">$ \zeta &gt; 1 $</td>
+<td style="text-align:left">过阻尼，无振荡</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="A-9-常见波形">A.9 常见波形</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">波形</th>
+<th style="text-align:left">表达式</th>
+<th style="text-align:center">有效值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">正弦波</td>
+<td style="text-align:left">$ v(t) = V_m \sin(\omega t) $</td>
+<td style="text-align:center">$ V_m/\sqrt{2} $</td>
+</tr>
+<tr>
+<td style="text-align:left">方波</td>
+<td style="text-align:left">±$ V_m $</td>
+<td style="text-align:center">$ V_m $</td>
+</tr>
+<tr>
+<td style="text-align:left">三角波</td>
+<td style="text-align:left">线性变化</td>
+<td style="text-align:center">$ V_m/\sqrt{3} $</td>
+</tr>
+<tr>
+<td style="text-align:left">锯齿波</td>
+<td style="text-align:left">线性上升突降</td>
+<td style="text-align:center">$ V_m/\sqrt{3} $</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="A-10-MOSFET-与二极管模型速查">A.10 MOSFET 与二极管模型速查</h3>
+<h4 id="MOSFET（简化模型）">MOSFET（简化模型）</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">区域</th>
+<th style="text-align:left">条件</th>
+<th style="text-align:left">电流表达式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">截止区</td>
+<td style="text-align:left">$ V_{GS} &lt; V_{th} $</td>
+<td style="text-align:left">$ I_D \approx 0 $</td>
+</tr>
+<tr>
+<td style="text-align:left">线性区</td>
+<td style="text-align:left">$ V_{GS} &gt; V_{th}, , V_{DS} &lt; V_{GS} - V_{th} $</td>
+<td style="text-align:left">$ I_D = k[(V_{GS}-V_{th})V_{DS} - V_{DS}^2/2] $</td>
+</tr>
+<tr>
+<td style="text-align:left">饱和区</td>
+<td style="text-align:left">$ V_{GS} &gt; V_{th}, , V_{DS} \ge V_{GS} - V_{th} $</td>
+<td style="text-align:left">$ I_D = \frac{1}{2}k(V_{GS}-V_{th})^2 $</td>
+</tr>
+</tbody>
+</table>
+<h4 id="二极管（理想模型）">二极管（理想模型）</h4>
+<p>$$<br>
+I = I_S(e^{V_D/(nV_T)} - 1)<br>
+$$<br>
+其中 $ V_T = \frac{kT}{q} \approx 26 , \text{mV} $ （室温）</p>
+<hr>
+<h3 id="A-11-频率响应与滤波器">A.11 频率响应与滤波器</h3>
+<ul>
+<li><strong>截止频率</strong>：<br>
+$$<br>
+\omega_c = \frac{1}{RC}<br>
+$$</li>
+<li><strong>低通滤波器传递函数</strong>：<br>
+$$<br>
+H(j\omega) = \frac{1}{1 + j\omega RC}<br>
+$$</li>
+<li><strong>高通滤波器传递函数</strong>：<br>
+$$<br>
+H(j\omega) = \frac{j\omega RC}{1 + j\omega RC}<br>
+$$</li>
+</ul>
+<hr>
 <blockquote>
-<p>但你要清楚，无论硕博，学习的时间相对于你的一生，都是极为短暂的，如何资源、人脉、见识最大化，才是你应该首要考虑的问题，你用三年的时间去找一处“享受生活的处所”无疑是血亏的。</p>
+<p>📘 <strong>提示</strong>：<br>
+此表仅供快速回顾与计算参考，具体推导与应用请结合教材对应章节内容。</p>
 </blockquote>
-<p>具体找导师的方法文章后半段有很详细的具体实践，我这里就不赘述了。<br>
-如果已经确定了老师，那就不用看这一部分了。<br>
-我们可能会以为导师决定了我们博士生涯的下限，而努力决定了我们的上限。但我觉得，事实可能恰恰相反。</p>
-<h2 id="二-以一位前辈的直博生涯为例">二. 以一位前辈的直博生涯为例</h2>
-<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/320141144/answer/665950586">问题：直博生很难毕业吗</a><br>
-这是一位大佬从入学到毕业的记录<br>
-下面是我对这篇文章做的简单总结：</p>
-<h3 id="科研学术方面">科研学术方面</h3>
-<h4 id="心态建设">心态建设</h4>
-<ol>
+<h3 id="附注">附注</h3>
+<p>此外，也可采用下面的顺序来组织电路课程和电子学课程：</p>
+<ul>
 <li>
-<p>读博本质上是独行者的旅程，需要强大的内在驱动力和坚定的信念来支撑。</p>
-<blockquote>
-<p>国内的实验室，据我了解，拿我自己做的计算机某个领域来说，其实做的好的大实验室才有巨人的肩膀，研究内容的传承，但是大实验室才那么几个。大部分的实验室都是小实验室，都是从头开始学，因为小实验室的学生，高年级的硕士或者博士都是为了赶快谋求下一个人生的出路，不会给你低年级博士说什么，说了也没什么用，因为大部分都不是特别具体的经验。所以，读博，大部分人都是小实验室，那么你就要在实验室的基础上充分发挥的各方面“潜力”(潜力这个词，慢慢体会，哈哈！)</p>
-</blockquote>
-<p>也就是说其实导师和学长学姐并不能提供太多的帮助。</p>
+<p><strong>电路课程顺序</strong>：<br>
+第 1 章（集总电路抽象）→ 第 2 章（KVL 和 KCL）→ 第 3 章（网络分析）→<br>
+第 5 章（数字抽象）→ 第 6 章（MOSFET 的 S 和 SR 模型）→ 第 9 章（电容和电感）→<br>
+第 10 章（一阶暂态）→ 第 11 章（能量、功率和 CMOS）→ 第 12 章（二阶暂态）→<br>
+第 13 章（正弦稳态）→ 第 14 章（谐振电路的频率分析）→ 第 15 章（运算放大器抽象，任选）</p>
 </li>
 <li>
-<p>不要畏惧</p>
-<blockquote>
-<p>心里不要对自己的研究领域的顶级论文怕，要做到战略上重视它，战术上藐视它</p>
-</blockquote>
+<p><strong>电子学课程顺序</strong>：<br>
+第 4 章（非线性电路）→ 第 7 章（放大器与 MOSFET 的 SCS 模型）→<br>
+第 8 章（小信号放大器）→ 第 13 章（正弦稳态与滤波器）→<br>
+第 15 章（运算放大器抽象）→ 第 16 章（二极管与功率电路）</p>
 </li>
-<li>
-<p>坚定和耐心</p>
-<blockquote>
-<p>如果真的让我去看一个人适不适合读博的话，我会看重的是他这几个方面：性格是能“忍”的，也可以理解坚持耐心等等，然后脑子要灵活，不死板，智商不一定要高，但是情商一定要很高。至于理工科技术能力什么的，我觉得一般水平就可以了，可以慢慢的认真去学，不需要很厉害，一步一个脚印就可以，淹死的都是会水的（hhhh）。</p>
-</blockquote>
-</li>
-</ol>
-<h4 id="方法与路径">方法与路径</h4>
-<ol>
-<li>
-<p>从量变到质变</p>
-<blockquote>
-<p>先去做一些水的工作，才能慢慢的想到这个研究方向的本质，不是一上来就觉得疯狂投顶会。</p>
-</blockquote>
-</li>
-<li>
-<p>主动交流合作</p>
-<p>多与导师（尽管可能指导有限）、实验室学长学姐（尤其是能提供实际帮助的）、领域内的“网红”博士以及其他研究者交流，能打开思路，获得合作机会，提升产出。</p>
-<blockquote>
-<p>一定要和周围的人交流，导师（很多人都不跟他们交流，包括我hhhh），导师其实都是过来人，你一说，他们就懂了，而且他们学术资源肯定比你丰富，假如能帮你引荐一些大佬呢，那不是赚了吗，还有实验室学长学姐，学弟学妹等等，交流可以打开思路和看待问题的角度。</p>
-</blockquote>
-</li>
-<li>
-<p>将科研融入生活</p>
-<blockquote>
-<p>慢慢的把看paper当成是放松和一种自己的习惯融入到生活中，就是你跟它融为一体了，就是要找到一种paper的感觉，也方便你以后写paper给人一种如沐春风的感觉。</p>
-</blockquote>
-</li>
-</ol>
-<h3 id="人际关系与情商">人际关系与情商</h3>
-<ol>
-<li>
-<p>珍惜良师益友<br>
-感恩并保持与真正帮助过你的导师（尤其是领路人）、朋友、家人的联系。一个小而精的圈子弥足珍贵。</p>
-</li>
-<li>
-<p>提升人际交往能力</p>
-<blockquote>
-<p>多一点情商，博士拼到后面，情商在论文和日常接触大佬中比实力更重要。</p>
-</blockquote>
-</li>
-<li>
-<p>学习相处技巧</p>
-<blockquote>
-<p>多学习一些人与人之间的相处的技巧，让大家都舒服一些。不同的关系之间，比如领导，同事，研究合作伙伴，男女生等。</p>
-</blockquote>
-</li>
-</ol>
-<h3 id="个人生活与平衡">个人生活与平衡</h3>
-<h4 id="情感与家庭">情感与家庭</h4>
-<ol>
-<li>
-<p>尽早脱单，用心经营</p>
-<blockquote>
-<p>早日脱单，花时间建立和培养你们之间的感情和信任。</p>
-<p>花一些时间培养情侣之间的感情和双方相处的那种合拍点。除了工作和自己想达到的目标，我们总是要有家庭的，这是我们来人世间一次，都要体会的pipeline，所以大家要多多培养你们之间的感情，找一位喜欢的良人去携手。</p>
-</blockquote>
-</li>
-<li>
-<p>陪伴父母</p>
-<blockquote>
-<p>刻意抽时间回去陪陪他们，然后秋招也大概在家周围，不去远的地方了，父母在不远游吧（虽然在一起的时候，总是隔三差五骂我）</p>
-</blockquote>
-</li>
-</ol>
-<h4 id="健康管理">健康管理</h4>
-<ol>
-<li>
-<p>坚持锻炼<br>
-科研久坐，必须保持规律运动，注意身体健康，工作量力而行，避免过度透支。</p>
-</li>
-<li>
-<p>保持规律作息<br>
-尽管科研繁忙，但仍需尽量维持正常作息，身体是革命的本钱。</p>
-</li>
-</ol>
-<h4 id="培养生活技能">培养生活技能</h4>
-<p>学学做饭，打理家务这些基本技能。</p>
-<h3 id="职业发展规划">职业发展规划</h3>
-<ol>
-<li>
-<p>理性看待学历和收益</p>
-<blockquote>
-<p>不要想着读博能有多大的收益，这里我不是幸存者偏差的角度，我自己大二的时候并不知道NLP会这么火，选择读博我当时只是觉得数学中的机器学习+语言研究结合很有意思，然后我本科导师对我很好，接触了很多东西，至于后面火不火的其实都是受到资本的控制，不要觉得读计算机博士，金融博士这些热门方向以后一定钱很多，风险很大的</p>
-</blockquote>
-</li>
-<li>
-<p>持续学习</p>
-<blockquote>
-<p>感觉过了读博的这个难关之后，后面又来了很多难关，站在现在的处理问题能力来看，感觉比读博还累。果然生活没骗我，前面永远是困难，不是美景。怎么办捏，加油吧，继续在喜欢的方向上努力，对生活还是要充满希望，大家也要有乐观的心态迎接每一天，会变好的。</p>
-</blockquote>
-</li>
-<li>
-<p>职业选择</p>
-<blockquote>
-<p>现在大家读研的基本都是95后，甚至有00后，等你们选工作的时候，如果有工资相对低一点儿，但是是你喜欢的工作，尽可能选择那个，我觉得这样能收获动力和热爱，这种性价比是值得的。</p>
-</blockquote>
-</li>
-</ol>
-<h2 id="三-博士求职经历分享">三. 博士求职经历分享</h2>
-<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/559157484/answer/3149816238">文章链接</a></p>
-<p>这个先放着，等后面再来看。</p>
-<h2 id="四-知乎问题：博士毕业或正在读博的你，对博-0-有什么忠告吗？">四. 知乎问题：博士毕业或正在读博的你，对博 0 有什么忠告吗？</h2>
-<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/650930601">问题链接</a></p>
-<p>个人精力有限，翻看了部分回答，考虑到在 <a href="#%E4%BA%8C-%E4%BB%A5%E4%B8%80%E4%BD%8D%E5%89%8D%E8%BE%88%E7%9A%84%E7%9B%B4%E5%8D%9A%E7%94%9F%E6%B6%AF%E4%B8%BA%E4%BE%8B">二</a> 中已经列出了很多实用的经验，这里只补充前文没有提到的部分。</p>
-<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/650930601/answer/1953194576354444969">参考回答</a><br>
-这篇回答全是干货，不用总结。</p>
-<p>先暂时写到这里。</p>
+</ul>
+<hr>
 
                 
             </div>
@@ -692,7 +1081,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://enpinco.github.io/2025/10/09/du-bo-yu-bei-yi/">http://enpinco.github.io/2025/10/09/du-bo-yu-bei-yi/</a>
+                    <a href="http://enpinco.github.io/2025/10/09/mo-ni-he-shu-zi-dian-zi-dian-lu-ji-chu/">http://enpinco.github.io/2025/10/09/mo-ni-he-shu-zi-dian-zi-dian-lu-ji-chu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -730,16 +1119,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%A7%91%E7%A0%94%E5%85%A5%E9%97%A8/">
-                                    <span class="chip bg-color">科研入门</span>
+                                <a href="/tags/%E6%A8%A1%E7%94%B5/">
+                                    <span class="chip bg-color">模电</span>
                                 </a>
                             
-                                <a href="/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/">
-                                    <span class="chip bg-color">经验分享</span>
-                                </a>
-                            
-                                <a href="/tags/%E7%9F%A5%E4%B9%8E/">
-                                    <span class="chip bg-color">知乎</span>
+                                <a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+                                    <span class="chip bg-color">基础知识</span>
                                 </a>
                             
                         </div>
@@ -785,9 +1170,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2025/10/09/mo-ni-he-shu-zi-dian-zi-dian-lu-ji-chu/">
                     <div class="card-image">
@@ -805,9 +1191,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2025-10-09
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-10-09
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -820,6 +1206,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -842,31 +1229,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2025/10/08/wo-de-di-yi-pian-wen-zhang/">
+                <a href="/2025/10/09/du-bo-yu-bei-yi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="我的第一篇文章">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="读博前，知乎前辈们的忠告">
                         
-                        <span class="card-title">我的第一篇文章</span>
+                        <span class="card-title">读博前，知乎前辈们的忠告</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            经过两天的努力，终于从零开始搭建起了我的个人博客。谨以此文，作为这个空间的第一篇记录。
+                            在读博前，我将收集知乎上收藏的各位前辈们给出的建议，希望也能为后面更多的同路人一些帮助。此文长期更新。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-10-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-10-09
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/" class="post-category">
-                                    生活随笔
+                            <a href="/categories/%E7%A7%91%E7%A0%94/" class="post-category">
+                                    科研
                                 </a>
                             
                             
@@ -876,8 +1263,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%87%AA%E9%97%AE%E8%87%AA%E7%AD%94/">
-                        <span class="chip bg-color">自问自答</span>
+                    <a href="/tags/%E7%A7%91%E7%A0%94%E5%85%A5%E9%97%A8/">
+                        <span class="chip bg-color">科研入门</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/">
+                        <span class="chip bg-color">经验分享</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%9F%A5%E4%B9%8E/">
+                        <span class="chip bg-color">知乎</span>
                     </a>
                     
                 </div>
@@ -996,6 +1391,13 @@
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    });
+</script>
 
 
 
