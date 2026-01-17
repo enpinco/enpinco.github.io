@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>侠影之谜</title>
   
-  
+  <subtitle>随笔</subtitle>
   <link href="http://enpinco.github.io/atom.xml" rel="self"/>
   
   <link href="http://enpinco.github.io/"/>
