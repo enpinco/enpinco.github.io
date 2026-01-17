@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>博客使用教程</title>
+      <link href="/2026/01/17/bo-ke-shi-yong-jiao-cheng/"/>
+      <url>/2026/01/17/bo-ke-shi-yong-jiao-cheng/</url>
+      
+        <content type="html"><![CDATA[<h2 id="写在前面">写在前面</h2><p>放寒假了，经历了诸多事情，觉得做自媒体似乎难度太大，而写博客似乎还不错，加上本身我更喜欢写作。于是重启了博客计划，希望这次坚持久一些。为了更好地入门，决定写这样一篇教程。供自己速查，也供新入门的读者使用（如果我决定公开的话）。</p><h2 id="基础名词与基础操作">基础名词与基础操作</h2><h2 id="如何写博客">如何写博客</h2><h2 id="markdown基本语法">markdown基本语法</h2>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>LaTex零基础教程</title>
+      <link href="/2025/11/26/latex-ling-ji-chu-jiao-cheng/"/>
+      <url>/2025/11/26/latex-ling-ji-chu-jiao-cheng/</url>
+      
+        <content type="html"><![CDATA[<p>1.注释<br>用%<br>2.命令或特殊符号<br>用\，特殊符号，比如百分号<br>3.普通文本<br>标题，摘要，正文，图表都是普通文本</p><p>常见特殊符号<br>%——表示注释<br>&amp;——用于表格或数学公式中的位置对齐符号<br>$——用作数学公式标记符，两个符号中间的内容会被标记为数学公式<br>~——强制保留空格，非常古老的用法<br>^和_——用作上下标标记<br>{}——表示作为一个整体对待<br>#——编写宏包时使用</p><h2 id="正文">正文</h2><p>设定区域与正文区域</p><p>设定区域<br>√\documcntclass{…},\uscpackagc{…}为设定区域，规定论文格式，导入相关依赖包等<br>√一般不会对生产的PDF产生影响<br>设定区域会随着我们不断添加新的元素而丰富<br>Latex常用宏包（<a href="https://zhuanlan.zhihu.com/p/43981639%EF%BC%89">https://zhuanlan.zhihu.com/p/43981639）</a><br>•正文区域<br>√\begin…\end命令中间的这个区域<br>√所有在最终PDF文件的可见内容均在此区域添加，包括文字，图表，公式<br>在正文区域，我们需要先输入一篇论文的基本内容，设定论文题目，摘要，关键字等</p><p>正文各级标题<br>· chapter<br>章，一般只用于可以成书的文章<br>· section节<br>· subsection——小节<br>subsubsection-<br>——小小节<br>●也就是对应着我们的多级标题<br>换行、换段、换页、首行缩进等命令<br>\(\newline、\linebreak、\[offset])：换行，用两个反斜杠或者括号里的表示<br>·\par:分段<br>·\newpage：分页命令<br>·\setlength{\parindent}{长度}：首行缩进</p><p>数学公式</p><p>数学公式分类<br>1.正文行中特殊字符及短公式<br>•单行、多行公式带编号<br>•单行、多行公式不带编号<br>·分情况讨论公式</p><p>1.正文行中特殊字符及短公式<br>使用两个$，即为$公式$<br>2.单行公式带编号<br>\begin{equation}\label{公式标签}<br>…<br>\end{equation}</p><p>自动引用autoref{公式标签}（需要导入依赖包\usepackage{hyperref}）<br>3.无编号公式<br>[公式]或$$公式$$</p><blockquote><p>多行公式<br>●使用\begin{split}…end{split}（需要导入依赖包\uscpackagc{amsmath}，有的环境可能自带）<br>分情况讨论<br>·属于多行公式一种，使用\begin{cases}…end{cases}（需要导入依赖包\uscpackagc{amsmath},<br>有的环境可能自带）<br>•需要用正文样式输出的地方用\text{}</p></blockquote><blockquote><p>插入图片<br>·依赖包graphicx（有的环境可能自带）<br>，常用模板<br>\begin {figure} [htbp]<br>\centering 居中<br>\includegraphics[图片大小][图片路径]<br>\caption{图片标题、说明}<br>\label {图片标签}<br>\end{figure}</p></blockquote><p>● [图片大小]<br>图片大小使用height和width规定，单位<br>可以采用cm或in（inch），如果只规定高或<br>宽其中一个，图片将保持高宽比插入，所<br>以一般只需要规定图片宽度。<br>·[图片路径]<br>图片相对于tex文件的路径</p><p>·部分双栏显示的模板图片如果需要跨栏显示把\begin{figure}…\end{figure}替换为<br>\begin{figure*}…\end {figure*} 即可</p><p>最好插入矢量图，eps或者pdf</p><p>●htbp是LaTeX中用于控制浮动体位置的一个选项集。浮动体（如图片或表格）通常不会被直接放置在代<br>码所在的位置，而是由LaTcX根据排版需要放置在页面的其他位置。htbp用于指定浮动体的偏好位置。这<br>些选项的含义如下：<br>√h（here）：尽量将浮动体放置在代码所在的位置。然而，如果页面的顶部或底部能够更好地容纳浮<br>动体，LaTeX可能会选择这样做。<br>√t（top）：将浮动体放置在页面的顶部。<br>√b（bottom）：将浮动体放置在页面的底部。<br>√p（pagc）：将浮动体放置在一个单独的页面上。<br>√这些选项可以组合使用，例如ht表示首选放置在页面顶部，但如果不行就放置在代码所在的位置。<br>默认情况下，如果你不提供任何选项，LaTeX会使用tbp作为默认值。<br>√例如，bcgin{figurc}[htbp]表示在尽量放在当前位置，如果不行就放在页面顶部，底部，或者单律<br>一页。</p><p>表格<br>\begin {table}[htb]<br>\begin {center}\caption {Beecy.}<br>\label {table:1}<br>\begin {tabular} {|c|c|c|}<br>\hline \textbf{Algorithms} &amp; \textbf{Complexity} &amp;<br>\textbf{Overhead} \<br>\hline algorithm 1 &amp; high &amp; low \hline algorithm 2 &amp; high &amp; low\<br>\hline algorithm 3 &amp; low &amp; low \<br>\hline<br>\end{tabular}<br>\end{center}<br>\end{table}</p><p>latex有表格生成器，<a href="http://latex-tables.com">latex-tables.com</a></p><p>引用文献<br>·添加参考文献的方法很多，最简单的方法就是直接在LaTcx文件里直接引用<br>·文中引用格式\cite{lable1},cite{lable2}…%这里lable1，lable2可随意替换，和文末标签对应即可</p><p>·如果一次引用文献很多，可以使用BiBTex来管理文献，设定区城添加\bibliographystyle{unsrt}<br>·首先通过谷歌学术搜索文献，找到BiB格式的文献引用条目，然后添加至bib文伫中<br>@article {yu2019revicw,<br>tiulc-(A revicw ofrecurrcnt ncural nctworks: LSTM ccls and nctwork architccturcs),<br>author-(Yu, Yong and Si, Xiaoshcng and Hu, Changhua and Zhang, Jianxun),<br>journal-(Neural computation),<br>volumc-{31},<br>number-(7),<br>pages-{1235—1270},<br>year-{2019},<br>publishcr-(MIT Prcss Onc Rogcrs StrccL,Cambridge,MA 02142-1209,USA jourmals-inlo-…)<br>}<br>·文中需要插入文献的地方用\cite{yu2019review}进行引用，文末参考文献位置加\bibliography{bib文件名}</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>国际象棋基础</title>
+      <link href="/2025/11/22/guo-ji-xiang-qi-ji-chu/"/>
+      <url>/2025/11/22/guo-ji-xiang-qi-ji-chu/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言">前言</h2><p>最近在B站上刷到多邻国的广告，发现它居然推出了国际象棋的课程，决定把多儿下回来，去体验一下。</p><p>我对国际象棋的了解应该是从高二时看的《后翼弃兵》，只不过当时并没有学过国际象棋，只是被那种大女主的爽文剧情所吸引。（这里也强烈推荐一下这部剧，豆瓣评分9.0）</p><p><img src="images/insert" alt="《后翼弃兵》海报">{width=50% align=center}<br><em>《后翼弃兵》海报</em></p><p>经过一周的学习，感觉还是挺有意思的，比中国的象棋稍微复杂那么一点点。差点忘说了，我这篇文章只是复习一下，同时如果可能还可以起一个教学的作用。以多邻国的课程为例。（PS：由于这个系列应该会插入许多图片，刚刚调了一个小时，目前仍然没有完全解决vscode里无法实时渲染图片的问题，现在的解决方法是根据最新版本的VScode，直接把图片粘贴在里面的。先标记一下，后面来解决）</p><h2 id="认识各种棋子">认识各种棋子</h2><p>首先是整个棋盘，跟象棋一样，分为两方，不过这里是一黑一白，一共是有8x8个格子，并且格子的颜色也是交错着的。<br>现在我们是白方，最下面一排棋子从左到右依次是车，马，象，后，王，象，马，车，然后上面一排就是兵。</p><p><img src="images/insert-1" alt="alt text">{width=50% align=center}<br><em>整个棋盘</em></p><p>下面我们来依次讲解各个棋子的行进规则。<br>首先是车，车走直线，</p><p><img src="images/insert-2" alt="alt text">{width=50% align=center}<br><em>车的着法</em></p><p>象走斜线，这也就意味着，白底格子的象就只能走白底，黑底格子的象就只能走黑底。</p><p><img src="images/insert-3" alt="alt text">{width=50% align=center}<br><em>象的着法</em></p><p>接着是最厉害的后，后走斜线跟象是一样的，走直线和车是一样的</p><p><img src="images/insert-4" alt="alt text">{width=50% align=center}<br><em>后的着法</em></p><p>然后是王，这里和象棋里的将有区别，它没有活动范围限制，也就是任何范围都可以，当然王没了也就输了，这是一样的。</p><p><img src="images/insert-5" alt="alt text">{width=50% align=center}<br><em>王的着法</em></p><p>接着是马，这里的马也是走日字形，或者说L形</p><p><img src="images/insert-6" alt="alt text">{width=50% align=center}<br><em>马的着法</em></p><p>接着是兵，兵相对来说是比较复杂的棋子，如图，要么向前走一步，要么斜向吃子，如果不能吃子就只能向前走，不能斜向。同时它也不能前进吃子，也就是说前一个格子有棋子挡住则无法前进。<br><img src="images/insert-7" alt="alt text">{width=50% align=center}<br>兵的第一步可以向前走一格或两格，后面的每一步都只能走一格。（兵还有一些特殊规则，后面介绍）</p><p><img src="images/insert-8" alt="alt text">{width=50% align=center}<br><em>这个图里正对星星的兵是吃不了星星的，因为无法前进吃子。</em></p><h2 id="常见概念名词">常见概念名词</h2><p><strong>1.安全格</strong><br>安全格是指你的棋子不会被吃掉的格子<br><img src="images/insert-9" alt="alt text">{width=50% align=center}<br><strong>2.悬子</strong><br>悬子是无根子，可以安全地捕捉，也就是说没有棋子保护它。<br><img src="images/insert-10" alt="alt text">{width=50% align=center}<br>这个当然就是兵吃掉象了。<br><strong>3.将军</strong><br>对国王的攻击称为将军<br><img src="images/insert-11" alt="alt text">{width=50% align=center}<br><strong>4.将杀</strong><br>将杀是指王被将军且无法逃脱，这也是整个游戏的目标<br><img src="images/insert-12" alt="alt text">{width=50% align=center}<br><strong>5.底线将杀</strong><br>其实就是一种特殊的将杀，底线是棋盘上的最后一行<br><img src="images/insert-13" alt="alt text">{width=50% align=center}<br>这里将无处可走，游戏结束<br><strong>6.保护将杀</strong><br>这里象保护后免于被对面的王吃掉，制造了一个保护将杀。这是相当常用的将杀手段。<br><img src="images/insert-14" alt="alt text">{width=50% align=center}<br>当然也不一定是象和后，其他棋子也可以，比如车和后<br><img src="images/insert-15" alt="alt text">{width=50% align=center}<br>下面布置一道吧。<br><img src="images/insert-16" alt="alt text">{width=50% align=center}<br><strong>7.王车易位</strong><br>这是一个稍微有些复杂的规则，是保护王的特殊着法<br><img src="images/insert-23" alt="alt text">{width=50% align=center}<br>是指将王向车的方向移动两格，然后车将会跳到王的另一侧，当然需要这个路径畅通。<br><img src="images/insert-24" alt="alt text">{width=50% align=center}<br>将王向右移动两格，然后车会瞬移到王的另一侧。注意，能易位的车必须是还没有移动过的。<br><img src="images/insert-25" alt="alt text">{width=50% align=center}<br>王车易位还是很有必要的，比如这里，王孤零零地在外面是很容易受到攻击的。所以需要把它移到兵后面，同时车也保护着一边。当然也要留意底线将杀<br><img src="images/insert-26" alt="alt text">{width=50% align=center}</p><h2 id="如何开局">如何开局</h2><p>好啦，下面学习一些开局的知识。</p><p><strong>1.激活兵和马</strong><br>活跃的兵能控制宝贵的中心格。<br><img src="images/insert-17" alt="alt text">{width=50% align=center}<br>如图，王前面的<strong>兵</strong>这样走之后，<strong>后</strong>和王旁边的<strong>象</strong>就能活动起来了<br>活跃的<strong>马</strong>保护着棋盘中心的兵(只有马可以跳过路径中的棋子，其他棋子都可能会被挡住)<br><img src="images/insert-18" alt="alt text">{width=50% align=center}<br>注意，要安全地激活兵，这里如果这个黑兵前进两格，会被对面吃掉。<br><img src="images/insert-19" alt="alt text">{width=50% align=center}<br>标准的开局<br><img src="images/insert-20" alt="alt text">{width=50% align=center}<br><strong>2.激活象</strong><br>结合之前学习的象的着法和安全格的概念。这里也要记得前面提到的，白底的象只能走到白底的格子。<br><img src="images/insert-21" alt="alt text">{width=50% align=center}<br>象也可以这样走，对马进行攻击<br><img src="images/insert-22" alt="alt text">{width=50% align=center}<br>不难发现，激活象之后，就可以进行王车易位了。<br><strong>3.争取空间</strong><br><img src="images/insert-27" alt="alt text">{width=50% align=center}<br>这里会有一个问题，如下图，是选择吃掉左边的兵（斜向吃子），还是前进争取空间？<br><img src="images/insert-28" alt="alt text">{width=50% align=center}<br><strong>4.马的中心化</strong><br>将马尽量放到中间的位置，这样能往尽可能多的地方去。</p><h2 id="子力价值">子力价值</h2><p>兵的子力是1点，是最不值钱的棋子，马或象的子力是3点。通过吃掉有价值的棋子来获得优势。车的子力是5点，后的子力是9点</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>女权之我见</title>
+      <link href="/2025/10/30/nu-quan-zhi-wo-jian/"/>
+      <url>/2025/10/30/nu-quan-zhi-wo-jian/</url>
+      
+        <content type="html"><![CDATA[<p>最近这一周发生了两起与在校女大学生相关的新闻，在我心中，女大学生一直都是女权运动运动的主力军，而这周的两个新闻恰好反映了现在女权运动中较为核心的两个问题。同时，上周末我在和与风的聊天中谈及了女性在社会中出路的问题，所以今天我就从这两件事出发，谈一谈我对女性话题的浅见。(免责申明，仅代表个人看法，)</p><h2 id="三峡大学留学生夜闯女生宿舍">三峡大学留学生夜闯女生宿舍</h2><p>知乎链接如下：<a href="https://www.zhihu.com/question/1966873360865653542">湖北三峡大学被曝有留学生徒手爬楼夜闯女生宿舍，警方正在对案件进行调查处理，该留学生将承担哪些法律责任？</a></p><p>先简单概括一下整个事件吧：2025年10月26日凌晨，三峡大学一名男性外籍学生翻墙潜入本校的一间女生宿舍，并对一名女生实施了猥亵行为，目前，该留学生已被公安机关依法刑事拘留。同时，三峡大学依据校纪校规，已对其作出开除学籍的处理。</p><p>我这里先暂且不讨论整个事件中的留学生和校方的处理，只从女性的角度出发。这件事反映了女性的困境是普遍存在的，某种程度上来说，女性确实是社会中的弱势群体。</p><p>我想起了我在读大一的时候，我们学校的一个公众号发布的一篇文章里谈论了穿衣自由的问题。这篇推文里提醒女性注意衣着以防性骚扰。这种说法确实有失偏颇，</p><h2 id="重庆工商大学法学院老师被学生污蔑">重庆工商大学法学院老师被学生污蔑</h2><p>知乎链接如下：<a href="https://www.zhihu.com/question/1967104440965243030">如何看待重庆工商大学胡霞老师，因学生抱怨其上课刻薄等行为，决定起诉学生侵犯名誉权？</a></p><h2 id="女权运动的现状">女权运动的现状</h2><h2 id="当代女性的出路">当代女性的出路</h2><h2 id="总结">总结</h2><p>女权运动最终能否获得社会的广泛认同，非常重要的一点就是能不能争取到男性中间绝大多数理性的人对她们的支持。假如将所有男性都列为女权运动的敌人（更不要），要把他打至后外，那么这种运动注定是没有办法在整个社会运动的过程中扮演一个比较积极的力量。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>被讨厌的勇气</title>
       <link href="/2025/10/22/bei-tao-yan-de-yong-qi/"/>
       <url>/2025/10/22/bei-tao-yan-de-yong-qi/</url>
